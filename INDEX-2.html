@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <style>
+        .container
+        { border:2px solid red;
+        margin:3px 0;
+        background:cyan;
+        padding:9px;
+        }
+        .bg-primary
+        { background-color:blueviolet;
+        }
+        .text-success
+        {
+            color:white;
+        }
+    </style>
+    <body>
+        <h1> WELCOME TO MY WORLD(RAHUL)</h1>
+        <br>
+        <div id="firstCintainer" class="container">
+    <button id="click">Click here</button>
+    <p>FEEDBACK</p>
+    </div>
+    <div class="container">
+    <p>This is Javascript Turtorial</p>
+    </div>
+    </body>
+    <script>
+//way to print in JS
+//javascript console API(application programming interface) 
+         console.log("HEY HOMMIE");
+    alert("RAHUL");
+    document.write("this is document write");
+    console.warn("THIS IS WARNING")<!--THIS IS USED TO VIEW(BACKEND,inspect) SOMETHING WHICH IS UNDER WARNING-->
+    console.error("THIS IS AN ERROR");<!--TO LOCK AN ERROR WE USE console.error-->
+     console.clear();<!--THIS IS USED FOR clearing the log pannel-->  
+    console.assert(6==6);<!--this is used for CHECKING THE RESULT-->
+    //3.Jvavscript variables 
+    var num1=10;
+    var num2=20;
+    console.log(num1+num2);
+    console.log(num1*num2);
+    alert(num1+num2);
+    alert(num1*num2);
+    //4.Data types in Javascript
+    //strings
+    var str1="CHECK ME OUT";
+    var str2='NIGGA';
+    //objects
+    var marks=
+    {
+        ravi:50,
+        shubham:78,
+        rio:99.99,
+    }
+    console.log(num1);
+    console.log(num2);
+    console.log(str1);
+    console.log(str2);
+    console.log(marks);
+    //5.BOOLEAN EXPRESSION\
+    var a=10;
+    var b=20;
+    console.log(a,b);
+    console.log(a!=b);
+    console.log(a==b);
+    //UNDEFINED
+    var und=undefined;
+    var u;
+    console.log(und);
+console.log(u);
+/*At very high level,ther are two types of data type in JavaScript
+1.Primitive data types:undefined,null,string,boolean,symbol
+2.Reference data types:Arrays and objects
+*/
+var a=[10,5,15,20,25,"KULDEEP"];
+console.log(a[0]);
+console.log(a[5]);
+console.log(a)
+//OPERATORS
+//1.Arithematic operators 
+var a=10;
+var b=5;
+console.log("The value of a+b = ",a+b);
+console.log("The value of a-b = ",a-b); 
+console.log("The value of a/b = ",a/b);
+console.log("The value of a*b = ",a*b);
+//2.Assignment operators
+var c=b;
+//c +=2;c=c+2
+//c-=2;c=c-2
+//c *=2;c=c*2
+c /=2;//c=c/2
+console.log(c);
+//Comparion Operators
+var x=34;
+var y=40;
+console.log(x!=y);
+console.log(x==y);
+console.log(x>=y);
+console.log(x<=y);
+console.log(x<y);
+console.log(x>y);
+//Logical Operators
+console.log(2==2&&2==2);
+console.log(2==2&&5==2);
+console.log(5==10||10==10);
+console.log(10==5||5==10)
+console.clear();
+function avg(a,b)
+{
+    return (a+b)/2;
+}
+c=avg(8,12);
+console.log(c);
+//Conditional in Javascript N if-else LADDER
+var age=10;
+/*if(age>12)
+{
+    console.log("The person is ELIGIBLE");
+}
+else
+{
+    console.log("The person is NOT ELIGIBLE");
+}
+*/
+if(age>8)
+{
+    console.log("AGE IS LESS THAN GIVEN AGE");
+}
+else if(age<56)
+{
+    console.log("AGE IS GREATER THAN GIVEN AGE");
+}
+else 
+{
+    console.log("END OF THE LADDER");
+}
+console.clear();
+//var a=[5,10,15,20];
+/*console.log(a);
+for(var i=0;i<a.length;i++)
+{
+    console.log(a[i])
+}
+*/
+/*a.forEach(function(element)
+{
+    console.log(element);
+}
+)
+//let has scope till block level
+const a=10;// value assigned to the const(standard) can not be change
+a++;
+a=a+1;
+var a=[5,10,15,20];
+let j=0;
+while(j<a.length)
+{
+    console.log(a[j]);
+    j++;
+}
+var a=[5,10,15,20];
+let j=0;
+do{
+    console.log(a[j]);
+    j++;  
+}
+while(j<a.length);
+*
+//BREAK and CONTINUE statement
+console.clear();
+var a=[5,10,15,20];
+console.log(a);
+for(var i=0;i<a.length;i++)
+{
+    if(i==2)
+    {
+        continue;
+    }
+       console.log(a[i])
+}
+*
+//Method of ARRAYS
+let ar=["Fan","Camera",34,null];
+console.log(ar.length);
+console.log(ar[1]);
+ar.pop();
+console.log(ar);
+ar.push("RAHUL");
+console.log(ar);
+ar.shift();//.shift is used to DELETE the first element in array 
+console.log(ar);
+*
+let ar=["Fan","Camera",34,null];
+console.log(ar);
+const n = ar.unshift("RITISH");
+console.log(ar);
+console.log(n);
+ar.shift();
+console.log(ar);
+console.clear();
+let s=[50,25,30,4,3,5];
+s.sort()
+console.log(s.sort());
+console.clear();
+//STRING METHODS IN JAVASCRIPT
+let string="RAHUL can show you your real image";
+console.log(string);
+console.log(string.length); 
+console.log(string.indexOf("RAHUL"));
+console.log(string.indexOf("you"));
+console.log(string.indexOf("real image"));
+console.log(string.lastIndexOf("can"));
+d=string.replace("RAHUL","RITISH");//for replacing the element in string we use .replace
+console.log(d);
+*console.clear();
+//dates in JS
+console.clear();
+let myDate = new Date();
+console.log(myDate);
+console.log(myDate.getTime());
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+console.log(myDate.getHours());
+*/
+//DOM:-Document Object Model
+console.clear();
+document.getElementById('click').click();
+document.getElementById('click').style.border='blue';
+document.getElementById('click').style.border='2px solid blue';
+let elem = document.getElementById('click');
+console.log(elem);
+let elemClass = document.getElementByClassName("container");
+console.log(elemClass);
+elemClass[0].classList.add("bg-primary")
+elemClass[0].classList.add("text-success")
+//elemClass[0].classList.remove("text-success")
+console.log(elem.innerHTML);
+console.log(elem.innerText);`
+</script>
+</html>

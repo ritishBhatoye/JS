@@ -1,0 +1,13 @@
+1.edabit
+2.w3 resource
+3.asmaterwaytolearn
+4.exercism.io
+5.Maxpou
+6.sitepoint
+7.Jschallenger
+NOTES
+important TOPICS IN TODAYS ERA OF WEB-DEVELOPMENT
+1.Object.
+2.Array.
+3.Loops.
+ 

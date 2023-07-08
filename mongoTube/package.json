@@ -1,0 +1,16 @@
+{
+  "name": "mongotube",
+  "version": "1.0.0",
+  "description": "a fun project for youtube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ritish",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.1.0",
+    "mongoose": "^6.7.0",
+    "nodemon": "^2.0.20"
+  }
+}
